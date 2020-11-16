@@ -272,7 +272,7 @@
     "@types/chai-fs": "2.0.2",
     "@types/glob": "7.1.1",
     "@types/mocha": "7.0.2",
-    "@types/node": "13.11.0",
+    "@types/node": "^13.11.0",
     "@types/node-fetch": "^2.5.7",
     "@types/tmp": "0.2.0",
     "@typescript-eslint/eslint-plugin": "2.26.0",
@@ -293,6 +293,7 @@
   },
   "dependencies": {
     "compare-versions": "3.6.0",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "strip-ansi": "^5.2.0"
   }
 }

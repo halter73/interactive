@@ -1,6 +1,8 @@
 // Copyright (c) .NET Foundation and contributors. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+import stripAnsi from 'strip-ansi';
+
 export class LineReader {
     private current: string = '';
     private subscribers: Array<(line: string) => void> = [];
@@ -11,6 +13,7 @@ export class LineReader {
 
     onData(data: Buffer) {
         let str = data.toString('utf-8');
+        str = stripAnsi(str);
         this.current += str;
 
         let i = this.current.indexOf('\n');
