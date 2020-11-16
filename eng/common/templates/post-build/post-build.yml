@@ -111,9 +111,9 @@ stages:
     stageName: 'NetCore_Dev31_Publish'
     channelName: '.NET Core 3.1 Dev'
     channelId: 128
-    transportFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1-transport/nuget/v3/index.json'
-    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1/nuget/v3/index.json'
-    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1-symbols/nuget/v3/index.json'
+    transportFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5.0-transport/nuget/v3/index.json'
+    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5.0/nuget/v3/index.json'
+    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5.0-symbols/nuget/v3/index.json'
 
 - template: \eng\common\templates\post-build\channels\generic-public-channel.yml
   parameters:
@@ -171,9 +171,9 @@ stages:
     stageName: 'NetCore_Release31_Publish'
     channelName: '.NET Core 3.1 Release'
     channelId: 129
-    transportFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1-transport/nuget/v3/index.json'
-    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1/nuget/v3/index.json'
-    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1-symbols/nuget/v3/index.json'
+    transportFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5.0-transport/nuget/v3/index.json'
+    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5.0/nuget/v3/index.json'
+    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5.0-symbols/nuget/v3/index.json'
 
 - template: \eng\common\templates\post-build\channels\generic-public-channel.yml
   parameters:
@@ -183,9 +183,9 @@ stages:
     stageName: 'NetCore_Blazor31_Features_Publish'
     channelName: '.NET Core 3.1 Blazor Features'
     channelId: 531
-    transportFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1-blazor/nuget/v3/index.json'
-    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1-blazor/nuget/v3/index.json'
-    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1-blazor-symbols/nuget/v3/index.json'
+    transportFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5.0-blazor/nuget/v3/index.json'
+    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5.0-blazor/nuget/v3/index.json'
+    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5.0-blazor-symbols/nuget/v3/index.json'
 
 - template: \eng\common\templates\post-build\channels\generic-internal-channel.yml
   parameters:
@@ -195,9 +195,9 @@ stages:
     stageName: 'NetCore_31_Internal_Servicing_Publishing'
     channelName: '.NET Core 3.1 Internal Servicing'
     channelId: 550
-    transportFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet3.1-internal-transport/nuget/v3/index.json'
-    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet3.1-internal/nuget/v3/index.json'
-    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet3.1-internal-symbols/nuget/v3/index.json'
+    transportFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet5.0-internal-transport/nuget/v3/index.json'
+    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet5.0-internal/nuget/v3/index.json'
+    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet5.0-internal-symbols/nuget/v3/index.json'
 
 - template: \eng\common\templates\post-build\channels\generic-public-channel.yml
   parameters:
@@ -243,9 +243,9 @@ stages:
     stageName: 'NETCore_SDK_311xx_Publishing'
     channelName: '.NET Core SDK 3.1.1xx'
     channelId: 560
-    transportFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1-transport/nuget/v3/index.json'
-    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1/nuget/v3/index.json'
-    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1-symbols/nuget/v3/index.json'
+    transportFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5.0-transport/nuget/v3/index.json'
+    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5.0/nuget/v3/index.json'
+    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5.0-symbols/nuget/v3/index.json'
 
 - template: \eng\common\templates\post-build\channels\generic-internal-channel.yml
   parameters:
@@ -255,9 +255,9 @@ stages:
     stageName: 'NETCore_SDK_311xx_Internal_Publishing'
     channelName: '.NET Core SDK 3.1.1xx Internal'
     channelId: 559
-    transportFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet3.1-internal-transport/nuget/v3/index.json'
-    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet3.1-internal/nuget/v3/index.json'
-    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet3.1-internal-symbols/nuget/v3/index.json'
+    transportFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet5.0-internal-transport/nuget/v3/index.json'
+    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet5.0-internal/nuget/v3/index.json'
+    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet5.0-internal-symbols/nuget/v3/index.json'
 
 - template: \eng\common\templates\post-build\channels\generic-public-channel.yml
   parameters:
@@ -267,9 +267,9 @@ stages:
     stageName: 'NETCore_SDK_312xx_Publishing'
     channelName: '.NET Core SDK 3.1.2xx'
     channelId: 558
-    transportFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1-transport/nuget/v3/index.json'
-    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1/nuget/v3/index.json'
-    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1-symbols/nuget/v3/index.json'
+    transportFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5.0-transport/nuget/v3/index.json'
+    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5.0/nuget/v3/index.json'
+    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5.0-symbols/nuget/v3/index.json'
 
 - template: \eng\common\templates\post-build\channels\generic-internal-channel.yml
   parameters:
@@ -279,9 +279,9 @@ stages:
     stageName: 'NETCore_SDK_312xx_Internal_Publishing'
     channelName: '.NET Core SDK 3.1.2xx Internal'
     channelId: 557
-    transportFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet3.1-internal-transport/nuget/v3/index.json'
-    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet3.1-internal/nuget/v3/index.json'
-    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet3.1-internal-symbols/nuget/v3/index.json'
+    transportFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet5.0-internal-transport/nuget/v3/index.json'
+    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet5.0-internal/nuget/v3/index.json'
+    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet5.0-internal-symbols/nuget/v3/index.json'
 
 - template: \eng\common\templates\post-build\channels\generic-public-channel.yml
   parameters:
@@ -291,9 +291,9 @@ stages:
     stageName: 'NETCore_SDK_313xx_Publishing'
     channelName: '.NET Core SDK 3.1.3xx'
     channelId: 759
-    transportFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1-transport/nuget/v3/index.json'
-    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1/nuget/v3/index.json'
-    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1-symbols/nuget/v3/index.json'
+    transportFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5.0-transport/nuget/v3/index.json'
+    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5.0/nuget/v3/index.json'
+    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5.0-symbols/nuget/v3/index.json'
 
 - template: \eng\common\templates\post-build\channels\generic-internal-channel.yml
   parameters:
@@ -303,9 +303,9 @@ stages:
     stageName: 'NETCore_SDK_313xx_Internal_Publishing'
     channelName: '.NET Core SDK 3.1.3xx Internal'
     channelId: 760
-    transportFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet3.1-internal-transport/nuget/v3/index.json'
-    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet3.1-internal/nuget/v3/index.json'
-    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet3.1-internal-symbols/nuget/v3/index.json'
+    transportFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet5.0-internal-transport/nuget/v3/index.json'
+    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet5.0-internal/nuget/v3/index.json'
+    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet5.0-internal-symbols/nuget/v3/index.json'
     
 - template: \eng\common\templates\post-build\channels\generic-public-channel.yml
   parameters:
@@ -315,9 +315,9 @@ stages:
     stageName: 'NETCore_SDK_314xx_Publishing'
     channelName: '.NET Core SDK 3.1.4xx'
     channelId: 921
-    transportFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1-transport/nuget/v3/index.json'
-    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1/nuget/v3/index.json'
-    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1-symbols/nuget/v3/index.json'
+    transportFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5.0-transport/nuget/v3/index.json'
+    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5.0/nuget/v3/index.json'
+    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5.0-symbols/nuget/v3/index.json'
 
 - template: \eng\common\templates\post-build\channels\generic-internal-channel.yml
   parameters:
@@ -327,9 +327,9 @@ stages:
     stageName: 'NETCore_SDK_314xx_Internal_Publishing'
     channelName: '.NET Core SDK 3.1.4xx Internal'
     channelId: 922
-    transportFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet3.1-internal-transport/nuget/v3/index.json'
-    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet3.1-internal/nuget/v3/index.json'
-    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet3.1-internal-symbols/nuget/v3/index.json'
+    transportFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet5.0-internal-transport/nuget/v3/index.json'
+    shippingFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet5.0-internal/nuget/v3/index.json'
+    symbolsFeed: 'https://pkgs.dev.azure.com/dnceng/_packaging/dotnet5.0-internal-symbols/nuget/v3/index.json'
 
 - template: \eng\common\templates\post-build\channels\generic-public-channel.yml
   parameters:

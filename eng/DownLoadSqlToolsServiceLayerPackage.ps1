@@ -115,7 +115,7 @@ function DownloadPackagesFromGithub {
 
     $tarext = ".tar.gz"
     $zipext = ".zip"
-    $netcoreapp31tfm = "netcoreapp3.1"
+    $netcoreapp31tfm = "net5.0"
 
     <# Download .tar.gz files #>
     "osx-x64", "rhel-x64" | ForEach-Object {

@@ -6,7 +6,7 @@ If you would like to build `dotnet-interactive` tool and its associated librarie
 
 ## Prerequisites
 
-This project depends on .NET Core 3.1. Before working on the project, check that the .NET Core prerequisites have been met:
+This project depends on .NET Core 5.0. Before working on the project, check that the .NET Core prerequisites have been met:
 
    - [Prerequisites for .NET Core on Windows](https://docs.microsoft.com/en-us/dotnet/core/windows-prerequisites?tabs=netcore31)
    - [Prerequisites for .NET Core on Linux](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore31)
@@ -119,7 +119,7 @@ If you've made changes to `dotnet-interactive` and want to try them out with Vis
       -  "run",
       -  "dotnet-interactive",
       -  "--",
-      +  "/PATH/TO/REPO/ROOT/artifacts/bin/dotnet-interactive/Debug/netcoreapp3.1/Microsoft.DotNet.Interactive.App.dll",
+      +  "/PATH/TO/REPO/ROOT/artifacts/bin/dotnet-interactive/Debug/net5.0/Microsoft.DotNet.Interactive.App.dll",
          "[vscode]",
          "stdio",
          "--http-port-range",
