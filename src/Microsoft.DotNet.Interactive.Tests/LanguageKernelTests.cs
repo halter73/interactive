@@ -1122,6 +1122,7 @@ Console.Write(2);
                 Language.FSharp => @"let alpha = new Random()",
                 Language.CSharp => @"var alpha = new Random();",
                 Language.PowerShell => @"function alpha { 5 }",
+                _ => throw new InvalidOperationException(),
             };
 
             await SubmitCode(kernel, source);
@@ -1164,7 +1165,8 @@ Console.Write(2);
             {
                 Language.CSharp => "var x = 123;",
                 Language.FSharp => "let x = 123",
-                Language.PowerShell => "$x = 123"
+                Language.PowerShell => "$x = 123",
+                _ => throw new InvalidOperationException(),
             };
 
             var kernel = CreateKernel(language);
@@ -1191,7 +1193,8 @@ Console.Write(2);
             {
                 Language.CSharp => "var x = 123;",
                 Language.FSharp => "let x = 123",
-                Language.PowerShell => "$x = 123"
+                Language.PowerShell => "$x = 123",
+                _ => throw new InvalidOperationException(),
             };
 
             var kernel = CreateKernel(language);

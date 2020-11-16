@@ -43,7 +43,7 @@ class WriteLineHandler : DelegatingHandler
 var HttpClient = new HttpClient(new WriteLineHandler(new SocketsHttpHandler()));
 HttpClient.BaseAddress = new Uri(""http://localhost:5000/"");
 
-private static int __AspNet_NextEndpointOrder;
+private static int __AspNet_NextEndpointOrder = 0;
 
 public static IEndpointConventionBuilder MapAction(
     this IEndpointRouteBuilder endpoints,

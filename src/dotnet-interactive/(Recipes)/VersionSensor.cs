@@ -21,7 +21,7 @@ namespace Recipes
                                             .GetCustomAttribute<AssemblyInformationalVersionAttribute>()
                                             .InformationalVersion,
                 AssemblyVersion = assembly.GetName().Version.ToString(),
-                BuildDate = new FileInfo(new Uri(assembly.CodeBase).LocalPath).CreationTimeUtc.ToString("o")
+                BuildDate = new FileInfo(new Uri(assembly.Location).LocalPath).CreationTimeUtc.ToString("o")
             };
 
             AssignServiceVersionTo(info);
